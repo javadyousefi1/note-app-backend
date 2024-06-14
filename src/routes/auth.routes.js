@@ -9,7 +9,7 @@ const {
   loginController,
   registerController,
   checkAuthController,
-  verifyEmailController,resendEmailVerifyCode
+  verifyEmailController, resendEmailVerifyCode
 } = require("../controller/auth.controller");
 
 router.post("/login", validate(loginSchema), loginController);
